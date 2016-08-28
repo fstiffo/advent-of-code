@@ -14,9 +14,11 @@ module Day7
 solution1, solution2
 ) where
 
-import           Day7PuzzleInput               (input)
-import Data.Word
-import Data.Attoparsec
+import           Data.Attoparsec
+import           Data.Word
+import           Day7PuzzleInput (input)
+
+
 
 solution1 :: Int
 solution1 = 0

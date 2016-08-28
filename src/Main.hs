@@ -1,3 +1,15 @@
+{-|
+Module      : Main
+Description : Puzzle solutions for Advent of Code
+Copyright   : (c) Francesco Stiffoni, 2016
+License     : GPL-3
+Maintainer  : fstiffo@gmail.com
+Stability   : experimental
+Portability : POSIX
+
+For details about the puzzles visit http://adventofcode.com/
+-}
+
 module Main where
 
 import           Day2
