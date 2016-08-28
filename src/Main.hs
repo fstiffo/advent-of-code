@@ -33,4 +33,4 @@ main = do
   -- printSolutions 3 Day3.solution1 Day3.solution2
   -- printSolutions 4 Day4.solution1 Day4.solution2
   -- printSolutions 5 Day5.solution1 Day5.solution2
-  printSolutions 5 Day6.solution1 Day6.solution2
+  printSolutions 6 Day6.solution1 Day6.solution2
