@@ -1,0 +1,94 @@
+
+==================== FINAL INTERFACE ====================
+2016-08-23 19:13:46.6450243 UTC
+
+interface main@main:Day4 7103
+  interface hash: 297b8a50799dfeca4fc0a72d49dcdbbd
+  ABI hash: 2108157d5d815924870fd8cf7f34fffb
+  export-list hash: 35c6f1656edbb60d0f4cd68ceacf7345
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 19f14af9765166beee28e4f0433efd00
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Day4.solution1
+  Day4.solution2
+module dependencies: Day4PuzzleInput
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* byteable-0.1.1@bytea_38yjJsjDRm9KusCn8Yo4aB
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6*
+                      cryptohash-0.11.9@crypt_3QC5Euo7B5pLeQE6mvPYp4*
+                      cryptonite-0.15@crypt_4RPRoCUwAb1B7hOUMzmYVG
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 memory-0.13@memor_AtLbf837cOS9kNhIuRhbe8
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:GHC.Base a4939789b2cfd60b36ed163e56a623cd
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString d1fcd1f8263a6ddaf6453c0df2a1caf4
+import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Char8 c6332c35ee60e92d21b8d6be822fc617
+import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Internal fe5d057ff2b226bcbbb8dc734ad2495a
+import  -/  cryptohash-0.11.9@crypt_3QC5Euo7B5pLeQE6mvPYp4:Crypto.Hash 58b68e30d8666679ab696d54c30c6843
+import  -/  cryptohash-0.11.9@crypt_3QC5Euo7B5pLeQE6mvPYp4:Crypto.Hash.Types a8624a8d0f35fde1a037d4bf54154816
+import  -/  cryptonite-0.15@crypt_4RPRoCUwAb1B7hOUMzmYVG:Crypto.Hash.MD5 da4a2027c7667dda5241b4b949ba17ce
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 906b37a40029a8b67c803fa4b303a827
+import  -/  Day4PuzzleInput 0b2c95a6658f832ed8a925812f590d44
+  exports: 4cac3ee8b643545c2ddabe4ed43ff4b8
+  input a38994e3688a6ed3306db1cd8c4d8e2e
+4cfdc27cbd6937531060281d0b98f218
+  solution1 :: GHC.Integer.Type.Integer
+  {- Unfolding: (case GHC.Enum.$wenumDeltaInteger
+                        Day4.solution6
+                        Day4.solution5 of ww { (#,#) ww1 ww2 ->
+                 case Day4.solution1_go
+                        (GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2)
+                        0 of wild {
+                   [] -> Day4.solution4
+                   : a2 ds1
+                   -> case a2 of wild1 { GHC.Types.I# i ->
+                      GHC.Integer.Type.smallInteger i } } }) -}
+6e3ad50855593b248037be02e8d61345
+  solution1_go ::
+    [GHC.Integer.Type.Integer] -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+ab1f81732cf90ba94e24c72489f8b4ee
+  solution2 :: GHC.Integer.Type.Integer
+  {- Unfolding: (case GHC.Enum.$wenumDeltaInteger
+                        Day4.solution6
+                        Day4.solution5 of ww { (#,#) ww1 ww2 ->
+                 case Day4.solution2_go
+                        (GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2)
+                        0 of wild {
+                   [] -> Day4.solution4
+                   : a2 ds1
+                   -> case a2 of wild1 { GHC.Types.I# i ->
+                      GHC.Integer.Type.smallInteger i } } }) -}
+b5c53329d14c652d2bd759af12d14855
+  solution2_go ::
+    [GHC.Integer.Type.Integer] -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+f5b09d7825794372c5471e75ba054dac
+  solution4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer -1) -}
+6a57c955c50c5723be0d375591b9bb5d
+  solution5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+972040f86530a54287ff37808d2782d6
+  solution6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

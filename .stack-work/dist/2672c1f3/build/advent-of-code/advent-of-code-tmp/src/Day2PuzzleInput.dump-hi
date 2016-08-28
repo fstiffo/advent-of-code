@@ -1,0 +1,41 @@
+
+==================== FINAL INTERFACE ====================
+2016-08-23 07:58:32.8629747 UTC
+
+interface main@main:Day2PuzzleInput 7103
+  interface hash: 3e3cb90624173ef3ea2230f7fa5d78a8
+  ABI hash: 71a75cb2893842e8bac819cbfbe04cf0
+  export-list hash: bf780891257ef56a3a9871af579d928f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9d7162068ed5038961285f4f9ade51bf
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Day2PuzzleInput.input
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      raw-strings-qq-1.1@rawst_ID3MFclqMyK0MbTfvUn0Nf
+                      template-haskell-2.10.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Generics
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  raw-strings-qq-1.1@rawst_ID3MFclqMyK0MbTfvUn0Nf:Text.RawString.QQ 3d58a6acfb7bbeeef8c980a600e1f5d3
+15974d90b63b2312d780bd95597a50f9
+  input :: [GHC.Types.Char]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,344 @@
+
+==================== FINAL INTERFACE ====================
+2016-08-23 10:46:20.5505941 UTC
+
+interface main@main:Day3 7103
+  interface hash: 4e60d919f5525067cf9f2d1f040d3a43
+  ABI hash: 2dcbbc0cc837b27e398dffa0ca00fcb3
+  export-list hash: 392371b8d9faa0cafbf3983946691ff6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 19f14af9765166beee28e4f0433efd00
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Day3.solution1
+  Day3.solution2
+module dependencies: Day3PuzzleInput
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+import  -/  base-4.8.2.0:Data.Either e8724afd65fd432cfe9a54014f5f762d
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:GHC.Base a4939789b2cfd60b36ed163e56a623cd
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 906b37a40029a8b67c803fa4b303a827
+import  -/  Day3PuzzleInput b87c92ce94d4eabb0cccb08a9aae0df6
+  exports: 41d29e0dd56d14afe0efd83e6c78f7a2
+  input f3c80ce6d8518aced32b526bb2fdbd22
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec.Char 7396f62b889b69ef612242e6e328a501
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec.Combinator 177fa3f15566bdfd3ee9dfbae4a8270f
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec.Error 63e8f1b81e63d76097df26ebf1d2ab6f
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec.Prim 9e7b729de19916839e0537418ad49023
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec.String ad7d595fbcbe94bebe243cc974f981a4
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.ParserCombinators.Parsec 979f7d9534fa46e0bd4704f6ae351173
+c77961723de0422216f086ebaca26b63
+  $wgo :: [Day3.Move] -> (# [Day3.Move], [Day3.Move] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+0153b7703f98de1acb3f02a0e480447e
+  type Home = (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+e0e5ae6ca5d0095f43e1f93cf5d634f1
+  type Move = Day3.Home -> Day3.Home
+53eb2fcad3cce73c75fd02f2179fb36b
+  type Path = [Day3.Home]
+a853214da111a3258a9d361ef3d57344
+  east :: Day3.Move
+  {- Arity: 1, Strictness: <S,1*U(1*U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer) ->
+                 case ds of wild { (,) x y ->
+                 (GHC.Integer.Type.plusInteger x Day3.solution8, y) }) -}
+d8b1c4acb162de0a7058ca310425de7a
+  homes :: Day3.Path -> [Day3.Move] -> Day3.Path
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+ebf046a7ac34334ee259f4f1e9f96218
+  north :: Day3.Move
+  {- Arity: 1, Strictness: <S,1*U(U,1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer) ->
+                 case ds of wild { (,) x y ->
+                 (x, GHC.Integer.Type.plusInteger y Day3.solution8) }) -}
+cd4737e97a8d6405452e10c9639f64d1
+  puzzleInput :: [Day3.Move]
+  {- Unfolding: (case (Text.Parsec.Prim.runPT
+                         @ GHC.Base.String
+                         @ ()
+                         @ Data.Functor.Identity.Identity
+                         @ [Day3.Move]
+                         @ GHC.Types.Char
+                         (Text.Parsec.String.$s$fStream[]mtok @ GHC.Types.Char)
+                         Day3.solution6
+                           `cast`
+                         (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                                   <GHC.Base.String>_R
+                                   <()>_R
+                                   <Data.Functor.Identity.Identity>_R
+                                   <[Day3.Move]>_R))
+                         GHC.Tuple.()
+                         (GHC.Types.[] @ GHC.Types.Char)
+                         Day3PuzzleInput.input)
+                        `cast`
+                      (Data.Functor.Identity.NTCo:Identity[0]
+                           <Data.Either.Either
+                              Text.Parsec.Error.ParseError [Day3.Move]>_R) of wild {
+                   Data.Either.Left r -> GHC.Types.[] @ Day3.Move
+                   Data.Either.Right r -> r }) -}
+e3283863d1f6d8517296918d485e3792
+  solution1 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Day3.solution1_gl
+                   Day3.solution4
+                   Data.OldList.genericLength1) -}
+ab8e43e2e280d114d1f4674aef20f6b8
+  solution10 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Day3.solution11, Day3.solution11)) -}
+b5736d7f0f60fb0c0faeee9353e43987
+  solution11 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+fde03e865ec83b1d2c87de2c81e0bd73
+  solution12 ::
+    (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+    -> (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ w2 :: (GHC.Integer.Type.Integer,
+                          GHC.Integer.Type.Integer)
+                   w3 :: (GHC.Integer.Type.Integer,
+                          GHC.Integer.Type.Integer)[OneShot] ->
+                 case w2 of ww { (,) ww1 ww2 ->
+                 case w3 of ww3 { (,) ww4 ww5 ->
+                 case GHC.Integer.Type.eqInteger# ww1 ww4 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True -> GHC.Integer.Type.eqInteger ww2 ww5 } } } }) -}
+78c3591be6ea430ca755a0ce8a02d144
+  solution13 :: ([Day3.Move], [Day3.Move])
+  {- Unfolding: (case Day3.$wgo
+                        Day3.puzzleInput of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+576d4b0aff62bcfba8f5ce85e6acce98
+  solution1_cs :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "^v<>"#) -}
+2d0ff135566070a9b42de6d6c4ca751d
+  solution1_gl ::
+    [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+a71b9824bf54b6ab593547a8f69eda27
+  solution2 :: GHC.Integer.Type.Integer
+  {- Unfolding: (case Day3.solution13 of wild { (,) santaMoves robotMoves ->
+                 Day3.solution2_gl
+                   (Data.OldList.nubBy
+                      @ Day3.Home
+                      Day3.solution12
+                      (GHC.Base.++
+                         @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                         (Day3.homes Day3.start santaMoves)
+                         (Day3.homes Day3.start robotMoves)))
+                   Data.OldList.genericLength1 }) -}
+aeebf0c81cc2fa6a735398c2f61037cc
+  solution2_gl ::
+    [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+304ef04dc264595c38b1570654fc4c00
+  solution4 :: [Day3.Home]
+  {- Unfolding: (Data.OldList.nubBy
+                   @ Day3.Home
+                   Day3.solution12
+                   Day3.solution5) -}
+fee592f18d99d6952844865f8deacfc4
+  solution5 :: Day3.Path
+  {- Unfolding: (Day3.homes Day3.start Day3.puzzleInput) -}
+1e2025a8bb1016830455904780fad1a4
+  solution6 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> ([Day3.Move]
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> ([Day3.Move]
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Unfolding: (\ @ b
+                   eta1 :: Text.Parsec.Prim.State GHC.Base.String ()[OneShot]
+                   eta2 :: [Day3.Move]
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b[OneShot]
+                   eta3 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b[OneShot]
+                   eta4 :: [Day3.Move]
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b[OneShot]
+                   eta5 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b[OneShot] ->
+                 Text.Parsec.Combinator.many3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ Day3.Move
+                   Day3.solution7
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Day3.Move>_R))
+                   @ b
+                   eta1
+                   eta2
+                   eta3
+                   eta4
+                   eta5) -}
+f1c8fa41a65b559025d7e354169b37eb
+  solution7 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (Day3.Move
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Day3.Move
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: Day3.Move
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1[OneShot]
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1[OneShot]
+                   eta3 :: Day3.Move
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1[OneShot]
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1[OneShot] ->
+                 case eta of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Text.Parsec.Pos.SourcePos ww5 ww6 ww7 ->
+                 Text.Parsec.Char.$wa
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   (Text.Parsec.String.$s$fStream[]mtok @ GHC.Types.Char)
+                   Day3.solution9
+                   @ b1
+                   ww1
+                   ww5
+                   ww6
+                   ww7
+                   ww3
+                   (\ x :: GHC.Types.Char
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    eta1
+                      (case x of wild { GHC.Types.C# ds ->
+                       case ds of ds1 {
+                         DEFAULT -> GHC.Base.id @ Day3.Home
+                         '<' -> Day3.west
+                         '>' -> Day3.east
+                         '^' -> Day3.north
+                         'v' -> Day3.south } })
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww16 { Text.Parsec.Error.ParseError ww17 ww18 ->
+                       case ww17 of ww19 { Text.Parsec.Pos.SourcePos ww20 ww21 ww22 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww20
+                              ww21
+                              ww22
+                              ww18
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww23 ->
+                       Text.Parsec.Error.ParseError ww15 ww23 } } } } }))
+                   eta4 } }) -}
+ea34edf70ed60edd8d00058162674abc
+  solution8 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+f398530b0049e883d5edfbba47f34d28
+  solution9 :: GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 1,
+     Unfolding: (\ c :: GHC.Types.Char ->
+                 GHC.List.elem
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   c
+                   Day3.solution1_cs) -}
+3e53e8eb918eb479fd58046ed4db0ded
+  south :: Day3.Move
+  {- Arity: 1, Strictness: <S,1*U(U,1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer) ->
+                 case ds of wild { (,) x y ->
+                 (x, GHC.Integer.Type.minusInteger y Day3.solution8) }) -}
+28b9137efdab6f88e7d9335634aeb38f
+  start :: Day3.Path
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Day3.Home
+                   Day3.solution10
+                   (GHC.Types.[] @ Day3.Home)) -}
+0a0c0da9025cdb0a00373590e19354af
+  west :: Day3.Move
+  {- Arity: 1, Strictness: <S,1*U(1*U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer) ->
+                 case ds of wild { (,) x y ->
+                 (GHC.Integer.Type.minusInteger x Day3.solution8, y) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

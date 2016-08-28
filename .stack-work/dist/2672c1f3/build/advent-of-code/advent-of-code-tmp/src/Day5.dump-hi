@@ -1,0 +1,134 @@
+
+==================== FINAL INTERFACE ====================
+2016-08-24 20:30:06.8033266 UTC
+
+interface main@main:Day5 7103
+  interface hash: f2ced29109b20324a94c073739011e44
+  ABI hash: 0ca8c14dff7593a6c7854875f6752b73
+  export-list hash: 2a00382d72cfa1990d39d00d18b56994
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 19f14af9765166beee28e4f0433efd00
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Day5.solution1
+  Day5.solution2
+module dependencies: Day5PuzzleInput
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      raw-strings-qq-1.1@rawst_ID3MFclqMyK0MbTfvUn0Nf
+                      template-haskell-2.10.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Generics
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base a4939789b2cfd60b36ed163e56a623cd
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 906b37a40029a8b67c803fa4b303a827
+import  -/  Day5PuzzleInput cefe3955b2e0f72526fe07d988b30b9d
+  exports: fb64d4997a589efd505c12bc5bdde861
+  input bf6971afb4c0341bd7d9bb441b2228cf
+b140b7a9e013e510208b1308af50a03e
+  type Accumulator =
+    (Day5.Properties2,
+     (GHC.Types.Char, GHC.Types.Char, GHC.Base.String))
+784280634aa294019dcef2e3fec9f5c9
+  data Properties1
+    = Props1 {wovels :: GHC.Integer.Type.Integer,
+              twice :: GHC.Types.Bool,
+              bad :: GHC.Types.Bool}
+f3b48d281e171ba01463dcea453487a7
+  data Properties2
+    = Props2 {pair :: GHC.Types.Bool, sandwich :: GHC.Types.Bool}
+    Promotable
+2d9eeaafe7803a9e62eea0b9a2ec769f
+  bad :: Day5.Properties1 -> GHC.Types.Bool
+  RecSel Day5.Properties1
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Day5.Properties1 ->
+                 case ds of wild { Day5.Props1 ds1 ds2 ds3 -> ds3 }) -}
+9bccf78b9d55d996a06773fc8b49ed91
+  pair :: Day5.Properties2 -> GHC.Types.Bool
+  RecSel Day5.Properties2
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Day5.Properties2 ->
+                 case ds of wild { Day5.Props2 ds1 ds2 -> ds1 }) -}
+d54cf1798c2528304bce50fbf403c97e
+  puzzleInput :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.lines Day5PuzzleInput.input) -}
+8e71e0b3da08b7e44680828d7ca86452
+  sandwich :: Day5.Properties2 -> GHC.Types.Bool
+  RecSel Day5.Properties2
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Day5.Properties2 ->
+                 case ds of wild { Day5.Props2 ds1 ds2 -> ds2 }) -}
+7ad999e6ac4b1c7491a0fabc2149e101
+  solution1 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Day5.solution1_gl
+                   Day5.solution4
+                   Data.OldList.genericLength1) -}
+04333c2a9dfae868c4bc0ad44afbe674
+  solution1_gl ::
+    [GHC.Types.Bool]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+1a13a33285548b4842c99e71e14cc40d
+  solution1_go :: [[GHC.Types.Char]] -> [GHC.Types.Bool]
+  {- Arity: 1, Strictness: <S,1*U> -}
+e3a43c1f1a2df54a67a00651628e1df3
+  solution2 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Day5.solution2_gl
+                   Day5.solution5
+                   Data.OldList.genericLength1) -}
+53b72039893227f66325771c46261565
+  solution2_gl ::
+    [GHC.Types.Bool]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+b305ec8ac9c187380ee34716ed44aae3
+  solution2_go :: [[GHC.Types.Char]] -> [GHC.Types.Bool]
+  {- Arity: 1, Strictness: <S,1*U> -}
+1e58c986f96eb58d8bb438e18e58aeb6
+  solution4 :: [GHC.Types.Bool]
+  {- Unfolding: (Day5.solution1_go Day5.puzzleInput) -}
+e2d1014179090f8f0f91ecda590a6887
+  solution5 :: [GHC.Types.Bool]
+  {- Unfolding: (Day5.solution2_go Day5.puzzleInput) -}
+7ab435db53421daba1f965cb47dc6678
+  twice :: Day5.Properties1 -> GHC.Types.Bool
+  RecSel Day5.Properties1
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Day5.Properties1 ->
+                 case ds of wild { Day5.Props1 ds1 ds2 ds3 -> ds2 }) -}
+e3f0b5a71cdeed29a2cba962bb0f5eed
+  wovels :: Day5.Properties1 -> GHC.Integer.Type.Integer
+  RecSel Day5.Properties1
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Day5.Properties1 ->
+                 case ds of wild { Day5.Props1 ds1 ds2 ds3 -> ds1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

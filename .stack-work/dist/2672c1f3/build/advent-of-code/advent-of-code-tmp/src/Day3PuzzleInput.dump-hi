@@ -1,0 +1,33 @@
+
+==================== FINAL INTERFACE ====================
+2016-08-23 10:46:20.1617574 UTC
+
+interface main@main:Day3PuzzleInput 7103
+  interface hash: 4f9c8045a21c528f4dbb1fab09ef73b8
+  ABI hash: b87c92ce94d4eabb0cccb08a9aae0df6
+  export-list hash: 41d29e0dd56d14afe0efd83e6c78f7a2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 19f14af9765166beee28e4f0433efd00
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Day3PuzzleInput.input
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+f3c80ce6d8518aced32b526bb2fdbd22
+  input :: [GHC.Types.Char]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
